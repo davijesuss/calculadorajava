@@ -1,0 +1,50 @@
+package br.ucsal.lpa;
+
+import java.util.Scanner;
+
+public class CodigoJava {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Infome o primeiro valor" );
+		double valor1, valor2,res;
+		int operação;
+		
+		valor1 = scn.nextDouble();
+		System.out.println("Infome o segundo valor" );
+		valor2 = scn.nextDouble();
+		
+		
+		System.out.println ("Informe a operação :" +  
+		"\n(1) SOMA" 
+		+"\n(2) SUBTRAÇÃO"
+		+"\n(3) MULTIPLICAÇÃO"		
+		+"\n(4) DIVISÃO" ); 
+		operação = scn.nextInt();
+		
+		if (operação == 1) {
+			res = valor1 + valor2;
+		
+		}else if (operação == 2) {
+			res = valor1 - valor2;
+					
+		}else if (operação == 3) {
+			res = valor1 * valor2; 
+			
+		}else if (operação == 4) {
+			res = valor1 / valor2;
+			
+		}else {
+	
+			res = 0;	
+			System.out.println("OPERAÇÃO INVÁLIDA");
+		}
+				if (res != 0) {		
+					System.out.println(res);
+				}
+		
+		
+				
+	}
+
+}
